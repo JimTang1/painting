@@ -23,7 +23,7 @@
                     <app-contact-person
                     *ngFor="let contact of contacts | contactsFilter:term"
                     [contact]="contact"
-                    dnd-draggable [dragEnabled]="true" 
+                    dnd-draggable [dragEnabled]="true"
                     [dragData] = "contact"
                     [dropZones] = "['contactGroup']"
                     >

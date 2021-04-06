@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ContactService } from 'src/app/contacts/contact.service';
-import { Contacts } from 'src/app/contacts/contacts.model';
 import { Message } from '../message.model';
 import { MessageService } from '../message.service';
 @Component({

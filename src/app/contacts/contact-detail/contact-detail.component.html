@@ -7,22 +7,22 @@
                 </div>
             </div>
             <div class="col-xs-8">
-                <img 
-                [src]="contact?.imageUrl" 
-                alt="{{contact?.name}}" 
+                <img
+                [src]="contact?.imageUrl"
+                alt="{{contact?.name}}"
                 class="img-responsive"
                 style = "max-height: 150px;">
             </div>
             <div class="col-xs-4">
                 <div class="btn-goup">
-                    <button 
-                    type="button" 
+                    <button
+                    type="button"
                     class ="btn btn-primary"
                     (click)= "onEditContact()">
                     Edit </button>
-                
-                    <button 
-                    type="button" 
+
+                    <button
+                    type="button"
                     class ="btn btn-danger"
                     (click)="onDelete()">
                     Delete</button>
@@ -30,17 +30,49 @@
             </div>
         </div>
     </div>
-    <div class="row">
+
+<div class="row">
+  <div class="col-md-12">
+      <div class="panel panel-default">
+          <div class="col-xs-12 panel-heading">
+              <div class="col-xs-8">
+                  <span class="heading">Messages Content</span>
+              </div>
+              <!-- <div class="col-xs-4">
+                  <button class="btn btn-success">Messages</button>
+              </div> -->
+              <hr>
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <app-message-item
+                          *ngFor="let message of messages"
+                          [message]="message"
+                          >
+                          </app-message-item>
+                      </div>
+                  </div>
+              </div>
+              <div class="panel-footer">
+                  <app-message-edit>
+                  </app-message-edit>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- <div class="row">
         <div class="col-xs-12">
             <p>Email:{{contact?.email}}</p>
-            
+
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12">
             <p>Phone:{{contact?.phone}}</p>
         </div>
-    </div>
+    </div> -->
 </div>
 
 
