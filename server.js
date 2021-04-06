@@ -2,7 +2,7 @@
 var index = require('./server/routes/app');
 var mongoose = require('mongoose');
 // establish a connection to the mongo database
-mongoose.connect('mongodb://localhost:27017/cms',
+mongoose.connect('mongodb://localhost:27017/paint',
    { useNewUrlParser: true }, (err, res) => {
       if (err) {
          console.log('Connection failed: ' + err);

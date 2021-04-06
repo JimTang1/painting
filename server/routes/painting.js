@@ -1,5 +1,5 @@
 const express = require('express');
-const Contact = require('../models/contact');
+const Contact = require('../models/painting');
 const sequenceGenerator = require('./sequenceGenerator');
 const router = express.Router();
 

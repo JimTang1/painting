@@ -17,7 +17,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-sm-12 form-group">
             <label for="email">Email:</label>
             <input
@@ -33,13 +33,13 @@
               #email="ngModel">
           </div>
         </div>
-        <div class= "alert-danger" *ngIf = "!email.valid && email.touched">
+        <div class= "alert-danger">
           <p>You must enter a valid email</p>
-        </div>
+        </div> -->
 
         <div class="row">
           <div class="col-sm-12 form-group">
-            <label for="phone">Phone:</label>
+            <label for="phone">Description:</label>
             <input
               type="text"
               id="phone"
@@ -48,13 +48,10 @@
               max="255"
               name="phone"
               ngModel={{contact?.phone}}
-              pattern="\D*([2-9]\d{2})(\D*)([2-9]\d{2})(\D*)(\d{4})\D*"
               #phone="ngModel">
           </div>
         </div>
-        <div class= "alert-danger" *ngIf ="!phone.valid">
-          <p>Enter a valid phone number</p>
-        </div>
+
 
         <div class="row">
           <div class="col-sm-12 form-group">
@@ -92,8 +89,7 @@
 
         <div class="row">
           <div class="col-xs-12 btn-toolbar">
-            <div *ngIf="!name.valid && name.touched ||
-            !email.valid && email.touched"
+            <div *ngIf="!name.valid && name.touched"
             class= "alert-danger">
                 The Name and Email fields are required.
             </div>

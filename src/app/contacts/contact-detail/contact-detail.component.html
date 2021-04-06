@@ -36,7 +36,7 @@
       <div class="panel panel-default">
           <div class="col-xs-12 panel-heading">
               <div class="col-xs-8">
-                  <span class="heading">Messages Content</span>
+                  <span class="heading">Let us know your thought</span>
               </div>
               <!-- <div class="col-xs-4">
                   <button class="btn btn-success">Messages</button>
@@ -44,6 +44,10 @@
               <hr>
               <div class="panel-body">
                   <div class="row">
+                    <div class="panel-footer">
+                      <app-message-edit>
+                      </app-message-edit>
+                  </div>
                       <div class="col-xs-12">
                           <app-message-item
                           *ngFor="let message of messages"
@@ -52,10 +56,6 @@
                           </app-message-item>
                       </div>
                   </div>
-              </div>
-              <div class="panel-footer">
-                  <app-message-edit>
-                  </app-message-edit>
               </div>
           </div>
       </div>

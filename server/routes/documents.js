@@ -29,14 +29,14 @@ router.get('/:id', (req, res, next) => {
 
  router.post('/', (req, res, next) => {
     const maxDocumentId = sequenceGenerator.nextId("documents");
-  
+
     const document = new Document({
       id: maxDocumentId,
       name: req.body.name,
       description: req.body.description,
-      url: req.body.url
+      // url: req.body.url
     });
-  
+
     document.save()
       .then(createdDocument => {
         res.status(201).json({
@@ -57,8 +57,8 @@ router.get('/:id', (req, res, next) => {
       .then(document => {
         document.name = req.body.name;
         document.description = req.body.description;
-        document.url = req.body.url;
-  
+        // document.url = req.body.url;
+
         Document.updateOne({ id: req.params.id }, document)
           .then(result => {
             res.status(204).json({

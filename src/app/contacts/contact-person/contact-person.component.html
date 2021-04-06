@@ -1,17 +1,17 @@
-<a 
+<a
     style = "cursor: pointer;"
     [routerLink]="contact.id"
     routerLinkActive="active"
     class ="list-group-item clearfix">
     <div class="pull-left">
         <h4 class="list-group-item-heading">{{contact?.name}}</h4>
-        <p class="list-group-item-text">{{contact?.phone}}</p>
+        <h4>Item Id: {{contact?.id}}</h4>
     </div>
     <span class="pull-right">
-        <img 
-        [src]="contact?.imageUrl" 
-        alt="{{contact?.name}}" 
-        class="img-responsive" 
+        <img
+        [src]="contact?.imageUrl"
+        alt="{{contact?.name}}"
+        class="img-responsive"
         style ="max-height: 50px;">
     </span>
 </a>
