@@ -4,7 +4,7 @@ export class Contacts{
         public id: string,
         public name: string,
         public email: string,
-        public phone: string,
+        public price: string,
         public imageUrl: string,
         public group: Contacts[]
         ){}
