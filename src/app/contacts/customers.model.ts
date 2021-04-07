@@ -3,8 +3,8 @@ export class Customers{
   constructor(
       public id: string,
       public name: string,
-      public email: string,
-      public phone: string,
+      public price: string,
+      public description: string,
       public imageUrl: string,
       public group: Customers[]
       ){}
